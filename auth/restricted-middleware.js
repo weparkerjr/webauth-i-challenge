@@ -22,4 +22,3 @@ module.exports = function restricted(req, res, next) {
     res.status(400).json({ message: 'please provide valid credentials' });
   }
 };
- 

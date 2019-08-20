@@ -1,7 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 const db = require('./database/dbConfig.js');
 const Users = require('./users/users-model.js');
@@ -68,5 +68,5 @@ server.post('/hash', (req, res) => {
   res.status(200).json({ password, hash });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 server.listen(port, () => console.log(`\n** Running on port ${port} **\n`));
